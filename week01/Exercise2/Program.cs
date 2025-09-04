@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("What is your grade percentage?");
+        Console.Write("What is your grade percentage?");
         string user = Console.ReadLine();
         int gradePercent = int.Parse(user);
 
@@ -39,25 +39,16 @@ class Program
             letter = "F";
         }
 
-        if (x >= a)
+        Console.WriteLine($"your letter grade is: {letter}");
+
+
+        if (x >= c)
         {
-            Console.WriteLine($"you got an {letter}");
+            Console.WriteLine("congrats you passed!");
         }
-        else if (x < a && x >= b)
+        else
         {
-            Console.WriteLine($"you got a {letter}");
-        }
-        else if (x < b && x >= c)
-        {
-            Console.WriteLine($" you got a {letter}");
-        }
-        else if (x < c && x >= d)
-        {
-            Console.WriteLine("your grade is a D");
-        }
-        else if (x <= f)
-        {
-            Console.WriteLine("You got an F");
+            Console.WriteLine("Unfortunately you have not passed, better luck next time.");
         }
         
     }
