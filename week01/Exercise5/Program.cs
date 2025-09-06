@@ -4,6 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
+        
+        static void DisplayMessage()
+        {
+            Console.WriteLine("welcome to the program!");
+        }
+
+        static void DisplayPersonalMessage(string userName)
+        {
+            Console.WriteLine($"Welcome {userName}");
+        }
+        static int AddNumbers(int first, int second)
+        {
+            int sum = first = second;
+            return sum;
+        }
     }
 }
