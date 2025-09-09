@@ -1,9 +1,30 @@
 using System;
+using System.ComponentModel;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Resumes Project.");
+        Job job1 = new Job();
+        job1._jobTitle = "Landscaper";
+        job1._company = "Self employed";
+        job1._startYear = 2015;
+        job1._endYear = 2016;
+
+
+        Job job2 = new Job();
+        job2._jobTitle = "electrician";
+        job2._company = "Banner electric";
+        job2._startYear = 2016;
+        job2._endYear = 2025;
+
+        Resume myResume = new Resume();
+        myResume._name = "Aaron Fonoimoana";
+
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+
+        myResume.Display();
     }
+
 }

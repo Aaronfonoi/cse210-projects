@@ -11,11 +11,11 @@ class Program
         string letter = "";
 
         int x = (gradePercent);
-        int a = 90;
-        int b = 80;
+        //int a = 90;
+        //int b = 80;
         int c = 70;
-        int d = 60;
-        int f = 59;
+        //int d = 60;
+        //int f = 59;
 
         if (gradePercent >= 90)
         {
