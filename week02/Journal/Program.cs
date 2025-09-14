@@ -7,13 +7,13 @@ class Program
     
     static void Main(string[] args)
     {
-        //int[] validnumbers = { 1, 2, 3, 4, 5, };
+        
 
 
         
         int choice = 0;
         Console.Write("Welcome to your journal.");
-        //choice = int.Parse(Console.ReadLine());
+        
 
         Journal theJournal = new Journal();
         PromptGenerator Prompt = new PromptGenerator();
