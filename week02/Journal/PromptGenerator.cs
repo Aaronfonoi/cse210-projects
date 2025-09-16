@@ -4,7 +4,11 @@ public class PromptGenerator
 {
     public static string[] _prompts = {
         "what food are you hoping to have or had today?",
-        "How did you sleep last night?"
+        "How did you sleep last night?",
+        "What is something you are planning on doing in the near future?",
+        "What is a blessing you have noticed recently?",
+        "How can you help someone in need?",
+        "what is something you were amazed by recently?"
     };
 
     public List<string> _PromptGenerator = new List<string>(_prompts);
